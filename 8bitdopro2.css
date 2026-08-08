@@ -1,34 +1,68 @@
-.controller.custom{
-    background-image: url(base.svg);
+/*
+ * 8BitDo Pro 2 - Xbox Layout
+ * GamePad Viewer custom skin
+ *
+ * Layout recreated from the finished Beta GamePad Viewer configuration.
+ * SVG assets are expected to live in the same directory as this CSS file.
+ *
+ * Based on the GamePad Viewer CSS structure used by:
+ * - JotaGo's original 8BitDo Pro 2 skin
+ * - DavidF-Dev/GPV-8bitdo-pro2-skin
+ *
+ * Visual assets / Xbox-layout modifications: 05JackGB
+ */
+
+/* =========================================================
+   CONTROLLER BASE
+   Beta GPV: 722 x 587 px
+   ========================================================= */
+
+.controller.custom {
+    background-image: url("base.svg");
     background-repeat: no-repeat;
-    height: 692px;
-    width: 758px;
-    transform: scale(1, 1);
-    top: 1px;
-    left: 1px;
+    background-size: 100% 100%;
+    width: 722px;
+    height: 587px;
 }
 
+/*
+ * Static image shown when no controller is connected.
+ * basewithsticks.svg is useful here because the normal connected
+ * skin draws the movable sticks as separate elements.
+ *
+ * If you prefer your disconnected.svg, replace the URL below.
+ */
 .custom.disconnected {
-    background-image: url(disconnected.svg);
+    background-image: url("basewithsticks.svg");
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .custom.disconnected div {
     display: none;
 }
 
-.custom .triggers{
-    width: 341px;
-    height: 119px;
+
+/* =========================================================
+   TRIGGERS
+   Left:  144 x 114, top 0, left 93
+   Right: 144 x 114, top 0, left 497
+   ========================================================= */
+
+.custom .triggers {
     position: absolute;
-    left: 58px;
+    top: 0;
+    left: 0;
+    width: 722px;
+    height: 587px;
 }
 
 .custom .trigger {
-    width:118px;
-    height:119px;
-    background: url(trigger.svg);
+    position: absolute;
+    width: 144px;
+    height: 114px;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
     opacity: 1;
 }
 
@@ -37,28 +71,38 @@
 }
 
 .custom .trigger.left {
-    float: left;
-    background-position: 0 0;
+    top: 0;
+    left: 93px;
+    background-image: url("trigger-left.svg");
 }
 
 .custom .trigger.right {
-    float: right;
-    transform: rotateY(180deg);
+    top: 0;
+    left: 497px;
+    background-image: url("trigger-right.svg");
 }
 
+
+/* =========================================================
+   BUMPERS
+   Left:  157 x 35, top 110, left 88
+   Right: 157 x 35, top 110, left 477
+   ========================================================= */
+
 .custom .bumpers {
-    width: 341px;
-    height: 53px;
-    left: 58px;
     position: absolute;
-	top:80px;
+    top: 0;
+    left: 0;
+    width: 722px;
+    height: 587px;
 }
 
 .custom .bumper {
-    width: 124px;
-    height: 53px;
-    background: url(bumper.svg);
+    position: absolute;
+    width: 157px;
+    height: 35px;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
     opacity: 0;
 }
 
@@ -67,14 +111,225 @@
 }
 
 .custom .bumper.left {
-    float: left;
+    top: 110px;
+    left: 88px;
+    background-image: url("bumper-left.svg");
 }
 
 .custom .bumper.right {
-    float: right;
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
+    top: 110px;
+    left: 477px;
+    background-image: url("bumper-right.svg");
 }
+
+
+/* =========================================================
+   START / SELECT
+   Select (.back): 56 x 23, top 220, left 301
+   Start:          56 x 23, top 220, left 366
+   Both use the same pressed-state SVG.
+   ========================================================= */
+
+.custom .arrows {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 722px;
+    height: 587px;
+}
+
+.custom .back,
+.custom .start {
+    position: absolute;
+    width: 56px;
+    height: 23px;
+    background-image: url("start-select.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0;
+}
+
+.custom .back {
+    top: 220px;
+    left: 301px;
+}
+
+.custom .start {
+    top: 220px;
+    left: 366px;
+}
+
+.custom .back.pressed,
+.custom .start.pressed {
+    opacity: 1;
+}
+
+
+/* =========================================================
+   FACE BUTTONS (Xbox layout)
+   All: 52 x 52 px
+
+   Y: top 160, left 533
+   X: top 209, left 477
+   B: top 209, left 589
+   A: top 258, left 533
+   ========================================================= */
+
+.custom .abxy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 722px;
+    height: 587px;
+}
+
+.custom .button {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0;
+}
+
+.custom .button.pressed {
+    opacity: 1;
+}
+
+.custom .button.a {
+    top: 258px;
+    left: 533px;
+    background-image: url("button-a-pressed.svg");
+}
+
+.custom .button.b {
+    top: 209px;
+    left: 589px;
+    background-image: url("button-b-pressed.svg");
+}
+
+.custom .button.x {
+    top: 209px;
+    left: 477px;
+    background-image: url("button-x-pressed.svg");
+}
+
+.custom .button.y {
+    top: 160px;
+    left: 533px;
+    background-image: url("button-y-pressed.svg");
+}
+
+
+/* =========================================================
+   ANALOG STICKS
+   Both: 94 x 94 px
+
+   Left:  top 292, left 213
+   Right: top 292, left 416
+
+   GamePad Viewer adds the live analog movement to the stick
+   elements; these values define their neutral positions.
+   ========================================================= */
+
+.custom .sticks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 722px;
+    height: 587px;
+}
+
+.custom .stick {
+    position: absolute;
+    width: 94px;
+    height: 94px;
+    background-image: url("stick.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.custom .stick.pressed {
+    background-image: url("stick-pressed.svg");
+}
+
+.custom .stick.left {
+    top: 292px;
+    left: 213px;
+}
+
+.custom .stick.right {
+    top: 292px;
+    left: 416px;
+}
+
+
+/* =========================================================
+   D-PAD
+   Container: 116 x 116, top 177, left 106
+
+   Up:    41 x 63, top 0,  left 37
+   Down:  41 x 63, top 55, left 37
+   Left:  64 x 41, top 37, left -2
+   Right: 64 x 41, top 37, left 55
+   ========================================================= */
+
+.custom .dpad {
+    position: absolute;
+    width: 116px;
+    height: 116px;
+    top: 177px;
+    left: 106px;
+}
+
+.custom .face {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0;
+}
+
+.custom .face.pressed {
+    opacity: 1;
+}
+
+.custom .face.up {
+    width: 41px;
+    height: 63px;
+    top: 0;
+    left: 37px;
+    background-image: url("dpad-up-pressed.svg");
+}
+
+.custom .face.down {
+    width: 41px;
+    height: 63px;
+    top: 55px;
+    left: 37px;
+    background-image: url("dpad-down-pressed.svg");
+}
+
+.custom .face.left {
+    width: 64px;
+    height: 41px;
+    top: 37px;
+    left: -2px;
+    background-image: url("dpad-left-pressed.svg");
+}
+
+.custom .face.right {
+    width: 64px;
+    height: 41px;
+    top: 37px;
+    left: 55px;
+    background-image: url("dpad-right-pressed.svg");
+}
+
+
+/* =========================================================
+   PLAYER / ORIENTATION CLASSES
+   Kept for compatibility with GamePad Viewer's custom-skin DOM.
+   ========================================================= */
 
 .custom .p0 {
     -webkit-transform: rotate(0deg);
@@ -94,176 +349,4 @@
 .custom .p3 {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
-}
-
-.custom .arrows {
-    position: absolute;
-    width: 216px;
-    height: 36px;
-    top: 150px;
-    left: 191px;
-}
-
-.custom .back {
-    background: url(start-select.svg);
-    background-repeat: no-repeat;
-    width: 40px;
-    height: 36px;
-    opacity: 0;
-}
-.custom .start {
-    background: url(start-select.svg);
-    background-repeat: no-repeat;
-    background-position-x: 6px;
-    width: 46px;
-    height: 12px;
-    opacity: 0;
-}
-.custom .back.pressed, .start.pressed {
-    opacity: 1;
-}
-
-.custom .back {
-    float: left;
-	margin-right: -5px;
-}
-
-.custom .start {
-    float: left;
-}
-
-.custom .abxy {
-    position: absolute;
-    width: 130px;
-    height: 150px;
-	top: 80px;
-    left: 316px;
-}
-
-.custom .button {
-    position: absolute;
-    background: url(buttons.svg);
-    background-repeat: no-repeat;
-    width: 50px;
-    height: 50px;
-    opacity: 0;
-    transform: scale(1.03, 1.03);
-}
-
-.custom .button.pressed {
-    opacity: 1;
-}
-
-.custom .b {
-    background-position: -32px -32px;
-    width: 32px;
-    height: 32px;
-    top: 63px;
-    left: 58px;
-}
-
-.custom .a {
-    background-position: 0px -32px;
-    width: 32px;
-    height: 32px;
-    top: 94px;
-    right: 76px;
-}
-
-.custom .y {
-    background-position: -64px -32px;
-    width: 32px;
-    height: 32px;
-    top: 32px;
-    left: 22px;
-}
-
-.custom .x {
-    background-position: -96px -32px;
-    width: 32px;
-    height: 32px;
-    top: 63px;
-    left: -13px;
-}
-
-.custom .sticks {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    top: 196px;
-    left: 136px;
-}
-
-.custom .stick {
-    position: absolute;
-    background: url(stick.svg);
-    background-repeat: no-repeat;
-    background-position: 0px 0;
-    height: 58px;
-    width: 58px;
-}
-
-.custom .stick.pressed {
-    background-position: -60px 0px;
-}
-
-.custom .stick.left {
-    top: 0;
-    left: 0;
-}
-
-.custom .stick.right {
-    top: 0px;
-    left: 129px;
-}
-
-.custom .dpad {
-    position: absolute;
-    width: 114px;
-    height: 113px;
-    top: 80px;
-    left: 60px;
-}
-
-.custom .face {
-    background: url(dpad.svg);
-    background-repeat: no-repeat;
-    position: absolute;
-    opacity: 0;
-}
-
-.custom .face.pressed {
-    opacity: 1;
-}
-
-.custom .face.up {
-    background-position: 0px 0px;
-    left: 18px;
-    top: 23px;
-    width: 39px;
-    height: 57px;
-}
-
-.custom .face.down {
-    background-position: -39px 0px;
-	left: 30.5px;
-    bottom: -3px;
-    width: 24px;
-    height: 57px;
-}
-
-.custom .face.left {
-    background-position: -64px 0px;
-    width: 40px;
-    height: 55px;
-    top: 42px;
-    left: 6px;
-}
-
-.custom .face.right {
-    background-position: -102px 0px;
-    width: 40px;
-    height: 55px;
-    top: 42px;
-    right: 33px;
 }
