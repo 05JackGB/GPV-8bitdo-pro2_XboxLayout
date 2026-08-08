@@ -38,5 +38,5 @@ Original 8BitDo Pro controllers:
 - Pro 2: [https://www.8bitdo.com/pro2/](https://www.8bitdo.com/pro2/)
 - Pro 3: [https://www.8bitdo.com/pro3/](https://www.8bitdo.com/pro3/)
 
-GamePad Viewer site: (https://www.gamepadviewer.com/)[https://www.gamepadviewer.com/]
+GamePad Viewer site: [https://www.gamepadviewer.com/](https://www.gamepadviewer.com/)
 <br><br>
