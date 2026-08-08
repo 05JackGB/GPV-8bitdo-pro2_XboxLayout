@@ -19,11 +19,7 @@ Alternatively, visit [GamePad Viewer](https://gamepadviewer.com/#generate) and g
 1. If you're using OBS on Linux, be sure to use OBS-studio-browser in order that "Browser" appears in sources.
 2. Add a "Browser" source.
 3. Copy and paste this URL: https://gamepadviewer.com/?p=1&css=https://05jackgb.github.io/GPV-8bitdo-pro2_XboxLayout/8bitdopro2.css
-4. Adjustments:
-   
-    Width: 725
-   
-    Height: 586
+4. Adjustments. Width: 725 and Height: 586
    
 5. Done.
 
