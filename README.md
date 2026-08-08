@@ -27,7 +27,6 @@ This project uses [JotaGo's](https://gist.github.com/JotaGo/84e9c728a259d4b40e9f
 
 Code is based on [DavidF-Dev's](https://github.com/DavidF-Dev/GPV-8bitdo-pro2-skin/) work.
 
-
 Original 8BitDo Pro 2 controller: https://www.8bitdo.com/pro2/
 
 GamePad Viewer site: https://www.gamepadviewer.com/
