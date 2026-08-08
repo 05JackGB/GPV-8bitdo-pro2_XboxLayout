@@ -14,6 +14,7 @@ Browser Source URL: [https://gamepadviewer.com/?p=1&css=https://05jackgb.github.
 
 Alternatively, visit [GamePad Viewer](https://gamepadviewer.com/#generate) and generate your own customized URL; be sure to provide the necessary [Custom CSS URL](https://05jackgb.github.io/GPV-8bitdo-pro2_XboxLayout/8bitdopro2.css).
 
+
 ## Usage in OBS
 1. If you're using OBS on Linux, be sure to use OBS-studio-browser in order that "Browser" appears in sources.
 2. Add a "Browser" source.
@@ -26,8 +27,10 @@ Alternatively, visit [GamePad Viewer](https://gamepadviewer.com/#generate) and g
    
 5. Done.
 
+
 ### How it was made
 SVG files edited with Inkscape, positioning adjusted visually with Beta GamePad Viewer, and then converted to CSS.
+
 
 ### Acknowledgements
 This project uses [JotaGo's](https://gist.github.com/JotaGo/84e9c728a259d4b40e9fe969ae1aec00) images.
