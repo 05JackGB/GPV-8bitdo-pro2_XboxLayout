@@ -11,7 +11,7 @@ Simple layout to use.
 
 
 ## Usage
-Browser Source URL: https://05jackgb.github.io/GPV-8bitdo-pro2_XboxLayout/8bitdopro2.css
+Browser Source URL:  https://gamepadviewer.com/?p=1&css=https://05jackgb.github.io/GPV-8bitdo-pro2_XboxLayout/8bitdopro2.css
 
 Alternatively, visit [GamePad Viewer](https://gamepadviewer.com/#generate) and generate your own customised URL; be sure to provide the necessary [Custom CSS URL](https://davidf-dev.github.io/GPV-8bitdo-pro2-skin/8bitdopro2.css).
 
