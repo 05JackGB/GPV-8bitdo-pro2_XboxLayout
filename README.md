@@ -1,4 +1,4 @@
-# GamePad Viewer skin: 8BitDo Pro 2-3 with Xbox layout
+# GamePad Viewer skin: 8BitDo Pro with Xbox layout
 
 Simple layout to use.
 - Xbox ABXY layout
