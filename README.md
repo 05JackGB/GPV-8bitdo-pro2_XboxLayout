@@ -21,7 +21,6 @@ Alternatively, visit [GamePad Viewer](https://gamepadviewer.com/#generate) and g
 3. Copy and paste this URL: https://gamepadviewer.com/?p=1&css=https://05jackgb.github.io/GPV-8bitdo-pro2_XboxLayout/8bitdopro2.css
 4. Adjustments. Width: 725 and Height: 586
 5. Done.
-<br>
 
 
 ### How it was made
@@ -37,3 +36,4 @@ Code is based on [DavidF-Dev's](https://github.com/DavidF-Dev/GPV-8bitdo-pro2-sk
 Original 8BitDo Pro 2 controller: [https://www.8bitdo.com/pro2/](https://www.8bitdo.com/pro2/)
 
 GamePad Viewer site: (https://www.gamepadviewer.com/)[https://www.gamepadviewer.com/]
+<br>
