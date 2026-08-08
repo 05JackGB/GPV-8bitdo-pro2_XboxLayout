@@ -1,4 +1,4 @@
-# GamePad Viewer Skin: 8BitDo Pro 2 with Xbox layout
+# GamePad Viewer skin: 8BitDo Pro 2-3 with Xbox layout
 
 Simple layout to use.
 - Xbox ABXY layout
@@ -34,7 +34,9 @@ This project uses [Jota-Go's](https://gist.github.com/JotaGo/84e9c728a259d4b40e9
 
 Code is based on [DavidF-Dev's](https://github.com/DavidF-Dev/GPV-8bitdo-pro2-skin/) work.
 
-Original 8BitDo Pro 2 controller: [https://www.8bitdo.com/pro2/](https://www.8bitdo.com/pro2/)
+Original 8BitDo Pro controllers:
+- Pro 2: [https://www.8bitdo.com/pro2/](https://www.8bitdo.com/pro2/)
+- Pro 3: [https://www.8bitdo.com/pro3/](https://www.8bitdo.com/pro3/)
 
 GamePad Viewer site: (https://www.gamepadviewer.com/)[https://www.gamepadviewer.com/]
 <br><br>
