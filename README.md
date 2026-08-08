@@ -25,7 +25,8 @@ Alternatively, visit [GamePad Viewer](https://gamepadviewer.com/#generate) and g
 ### How it was made
 - SVG files edited with Inkscape
 - Positioning adjusted visually with Beta GamePad Viewer, and then converted to CSS.
-Inkscape → SVG → Beta GPV to mount → CSS → GitHub Pages → GamePad Viewer → OBS.
+
+Basically: Inkscape → SVG → Beta GPV to mount → CSS → GitHub Pages → GamePad Viewer → OBS.
 <br><br>
 
 ### Acknowledgements
