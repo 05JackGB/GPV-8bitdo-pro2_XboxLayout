@@ -21,6 +21,7 @@ Alternatively, visit [GamePad Viewer](https://gamepadviewer.com/#generate) and g
 4. Adjustments. Width: 725 and Height: 586
 5. Done.
 
+
 ### How it was made
 - SVG files edited with Inkscape
 - Positioning adjusted visually with Beta GamePad Viewer, and then converted to CSS.
