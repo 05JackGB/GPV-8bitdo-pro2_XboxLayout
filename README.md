@@ -21,11 +21,12 @@ Alternatively, visit [GamePad Viewer](https://gamepadviewer.com/#generate) and g
 3. Copy and paste this URL: https://gamepadviewer.com/?p=1&css=https://05jackgb.github.io/GPV-8bitdo-pro2_XboxLayout/8bitdopro2.css
 4. Adjustments. Width: 725 and Height: 586
 5. Done.
-<br>
+
 
 ### How it was made
 SVG files edited with Inkscape, positioning adjusted visually with Beta GamePad Viewer, and then converted to CSS.
-<br>
+
+
 
 ### Acknowledgements
 This project uses [JotaGo's](https://gist.github.com/JotaGo/84e9c728a259d4b40e9fe969ae1aec00) SVGs.
