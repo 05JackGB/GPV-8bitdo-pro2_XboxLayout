@@ -1,4 +1,4 @@
-# GamePad Viewer skin: 8BitDo Pro with Xbox layout
+# GamePad Viewer skin: 8BitDo Pro 2-3 with Xbox ABXY
 
 Simple layout to use.
 - Xbox ABXY layout
@@ -21,7 +21,6 @@ Alternatively, visit [GamePad Viewer](https://gamepadviewer.com/#generate) and g
 4. Adjustments. Width: 725 and Height: 586
 5. Done.
 <br>
-
 ### How it was made
 - SVG files edited with Inkscape
 - Positioning adjusted visually with Beta GamePad Viewer, and then converted to CSS.
