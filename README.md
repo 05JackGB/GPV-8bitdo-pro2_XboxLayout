@@ -1,5 +1,4 @@
 # GamePad Viewer Skin: 8BitDo Pro 2 with Xbox layout
-### NOT FINISHED
 
 Simple layout to use.
 - 8BitDo branding
