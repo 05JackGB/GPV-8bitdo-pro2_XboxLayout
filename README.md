@@ -6,7 +6,7 @@ Simple layout to use.
 - Xbox face buttons layout
 
 
-<img width="40%" src="controller-preview.png">
+<img width="40%" src="controller-preview.gif">
 
 
 ## Usage
