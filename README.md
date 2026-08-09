@@ -12,7 +12,8 @@ Simple layout to use.
 ### Browser Source URL to use
 - Xbox ABXY face-buttons: [https://gamepadviewer.com/?p=1&css=https://05jackgb.github.io/GPV-8bitdo-pro2_XboxLayout/8bitdopro2.css](https://gamepadviewer.com/?p=1&css=https://05jackgb.github.io/GPV-8bitdo-pro2_XboxLayout/8bitdopro2.css)
 - 8BitDo original with PAL SNES colors: [https://gamepadviewer.com/?p=1&css=https://05jackgb.github.io/GPV-8bitdo-pro2_XboxLayout/8bitdopro2-snes.css](https://gamepadviewer.com/?p=1&css=https://05jackgb.github.io/GPV-8bitdo-pro2_XboxLayout/8bitdopro2-snes.css)
-<br>
+
+
 Alternatively, visit [GamePad Viewer](https://gamepadviewer.com/#generate) and generate your own customized URL; be sure to provide the necessary Custom CSS URL. <br>
 
 [Custom CSS URL with Xbox ABXY](https://05jackgb.github.io/GPV-8bitdo-pro2_XboxLayout/8bitdopro2.css)  -  [Custom CSS URL with original layout](https://05jackgb.github.io/GPV-8bitdo-pro2_XboxLayout/8bitdopro2-snes.css).
