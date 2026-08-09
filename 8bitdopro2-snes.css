@@ -1,0 +1,369 @@
+/*
+ * 8BitDo Pro 2 - Xbox Layout
+ * GamePad Viewer custom skin
+ *
+ * Fork based on:
+ * https://github.com/DavidF-Dev/GPV-8bitdo-pro2-skin
+ *
+ * SVG assets / visual modifications:
+ * https://github.com/05JackGB/GPV-8bitdo-pro2_XboxLayout
+ *
+ * Layout values reproduced from the author's Beta GamePad Viewer setup.
+ */
+
+/* =========================================================
+   CONTROLLER BASE
+   ========================================================= */
+
+.controller.custom {
+    width: 722px;
+    height: 587px;
+
+    background-image: url("base.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 722px 587px;
+}
+
+.custom.disconnected {
+    background-image: url("disconnected.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 722px 587px;
+}
+
+.custom.disconnected div {
+    display: none;
+}
+
+/*
+ * The visual player-indicator dots are already part of base.svg,
+ * so the built-in GamePad Viewer quadrant is not required.
+ */
+.custom .quadrant {
+    display: none;
+}
+
+
+/* =========================================================
+   TRIGGERS
+   Beta GPV:
+   L: 130x100 @ (93, 0)
+   R: 130x100 @ (497, 0)
+   ========================================================= */
+
+.custom .triggers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 722px;
+    height: 587px;
+}
+
+.custom .trigger {
+    position: absolute;
+    width: 130px;
+    height: 100px;
+
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+
+    /* GamePad Viewer controls trigger strength/visibility. */
+    opacity: 1;
+}
+
+.custom .trigger[data-value="0"] {
+    opacity: 0;
+}
+
+.custom .trigger.left {
+    top: 0;
+    left: 93px;
+    background-image: url("trigger-left.svg");
+}
+
+.custom .trigger.right {
+    top: 0;
+    left: 497px;
+    background-image: url("trigger-right.svg");
+}
+
+
+/* =========================================================
+   BUMPERS
+   Beta GPV:
+   L: 157x35 @ (88, 110)
+   R: 157x35 @ (477, 110)
+   ========================================================= */
+
+.custom .bumpers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 722px;
+    height: 587px;
+}
+
+.custom .bumper {
+    position: absolute;
+    width: 157px;
+    height: 35px;
+
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+
+    opacity: 0;
+}
+
+.custom .bumper.pressed {
+    opacity: 1;
+}
+
+.custom .bumper.left {
+    top: 110px;
+    left: 88px;
+    background-image: url("bumper-left.svg");
+}
+
+.custom .bumper.right {
+    top: 110px;
+    left: 477px;
+    background-image: url("bumper-right.svg");
+}
+
+
+/* =========================================================
+   START / SELECT
+   Beta GPV:
+   Select: 56x23 @ (301, 220)
+   Start:  56x23 @ (366, 220)
+
+   The neutral buttons are already drawn in base.svg.
+   start-select.svg is therefore only displayed while pressed.
+   ========================================================= */
+
+.custom .arrows {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 722px;
+    height: 587px;
+}
+
+.custom .back,
+.custom .start {
+    position: absolute;
+    width: 56px;
+    height: 23px;
+
+    background-image: url("start-select.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+
+    opacity: 0;
+}
+
+.custom .back.pressed,
+.custom .start.pressed {
+    opacity: 1;
+}
+
+/* "back" is the Select button in GamePad Viewer. */
+.custom .back {
+    top: 220px;
+    left: 301px;
+}
+
+.custom .start {
+    top: 220px;
+    left: 366px;
+}
+
+
+/* =========================================================
+   FACE BUTTONS - XBOX LAYOUT
+   Beta GPV:
+   X: 52x52 @ (533, 160)
+   Y: 52x52 @ (477, 209)
+   A: 52x52 @ (589, 209)
+   B: 52x52 @ (533, 258)
+
+   Neutral ABXY buttons are already part of base.svg.
+   Each SVG below is the pressed overlay only.
+   ========================================================= */
+
+.custom .abxy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 722px;
+    height: 587px;
+}
+
+.custom .button {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+
+    opacity: 0;
+}
+
+.custom .button.pressed {
+    opacity: 1;
+}
+
+.custom .a {
+    top: 209px;
+    left: 589px;
+    background-image: url("button-a-pressed.svg");
+}
+
+.custom .b {
+    top: 258px;
+    left: 533px;
+    background-image: url("button-b-pressed.svg");
+}
+
+.custom .x {
+    top: 160px;
+    left: 533px;
+    background-image: url("button-x-pressed.svg");
+}
+
+.custom .y {
+    top: 209px;
+    left: 477px;
+    background-image: url("button-y-pressed.svg");
+}
+
+
+/* =========================================================
+   THUMBSTICKS
+   Beta GPV:
+   L: 94x94 @ (213, 292)
+   R: 94x94 @ (416, 292)
+
+   IMPORTANT:
+   stick.svg must exist in the same repository/directory.
+   GamePad Viewer handles analog movement in JavaScript.
+   We intentionally do NOT set transform here.
+   ========================================================= */
+
+.custom .sticks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 722px;
+    height: 587px;
+}
+
+.custom .stick {
+    position: absolute;
+    width: 94px;
+    height: 94px;
+
+    background-image: url("stick.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+}
+
+.custom .stick.pressed {
+    background-image: url("stick-pressed.svg");
+}
+
+.custom .stick.left {
+    top: 292px;
+    left: 213px;
+}
+
+.custom .stick.right {
+    top: 292px;
+    left: 416px;
+}
+
+
+/* =========================================================
+   D-PAD
+   Container:
+   116x116 @ (106, 177)
+
+   Internal Beta GPV positions:
+   Up:    41x63 @ (37, 0)
+   Down:  41x63 @ (37, 55)
+   Left:  64x41 @ (-2, 37)
+   Right: 64x41 @ (55, 37)
+
+   Neutral D-pad is already part of base.svg.
+   ========================================================= */
+
+.custom .dpad {
+    position: absolute;
+    width: 116px;
+    height: 116px;
+    top: 177px;
+    left: 106px;
+}
+
+.custom .face {
+    position: absolute;
+
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+
+    opacity: 0;
+}
+
+.custom .face.pressed {
+    opacity: 1;
+}
+
+.custom .face.up {
+    width: 41px;
+    height: 63px;
+    top: 0;
+    left: 37px;
+    background-image: url("dpad-up-pressed.svg");
+}
+
+.custom .face.down {
+    width: 41px;
+    height: 63px;
+    top: 55px;
+    left: 37px;
+    background-image: url("dpad-down-pressed.svg");
+}
+
+.custom .face.left {
+    width: 64px;
+    height: 41px;
+    top: 37px;
+    left: -2px;
+    background-image: url("dpad-left-pressed.svg");
+}
+
+.custom .face.right {
+    width: 64px;
+    height: 41px;
+    top: 37px;
+    left: 55px;
+    background-image: url("dpad-right-pressed.svg");
+}
+
+
+/* =========================================================
+   UNUSED FIGHT-STICK / DIGITAL-TRIGGER ELEMENTS
+   ========================================================= */
+
+.custom .fstick,
+.custom .trigger-button {
+    display: none;
+}
