@@ -14,7 +14,7 @@ Simple layout to use.
 - 8BitDo original with PAL SNES colors: [https://gamepadviewer.com/?p=1&css=https://05jackgb.github.io/GPV-8bitdo-pro2_XboxLayout/8bitdopro2-snes.css](https://gamepadviewer.com/?p=1&css=https://05jackgb.github.io/GPV-8bitdo-pro2_XboxLayout/8bitdopro2-snes.css)
 
 
-Alternatively, visit [GamePad Viewer](https://gamepadviewer.com/#generate) and generate your own customized URL; be sure to provide the necessary Custom CSS URL. <br>
+Alternatively, visit [GamePad Viewer](https://gamepadviewer.com/#generate) and generate your own customized URL; be sure to copy and paste one of the desired Custom CSS URL below. <br>
 
 [Custom CSS URL with Xbox ABXY](https://05jackgb.github.io/GPV-8bitdo-pro2_XboxLayout/8bitdopro2.css)  -  [Custom CSS URL with original layout](https://05jackgb.github.io/GPV-8bitdo-pro2_XboxLayout/8bitdopro2-snes.css).
 
