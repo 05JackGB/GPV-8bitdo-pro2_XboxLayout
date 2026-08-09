@@ -1,17 +1,18 @@
 # GamePad Viewer skin: 8BitDo Pro 2 + Xbox ABXY
 
-Simple layout to use.
-- Xbox ABXY layout
+Simple skin based on DavidF-Dev's and Jota-Go's work with the next adjustments:
+- Xbox ABXY or SNES layout
 - 8BitDo branding
-- joystick base areas
+- joysticks gray base areas
 - redesigned triggers
-- independent SVG to ease modifications and compatibilty with GamePad Viewer and OBS
+- a little bigger bumpers
+- independent SVG to ease modifications
 
 <img width="40%" src="controller-preview.gif">
 
 ### Browser Source URL to use
 - Xbox ABXY face-buttons: [https://gamepadviewer.com/?p=1&css=https://05jackgb.github.io/GPV-8bitdo-pro2_XboxLayout/8bitdopro2.css](https://gamepadviewer.com/?p=1&css=https://05jackgb.github.io/GPV-8bitdo-pro2_XboxLayout/8bitdopro2.css)
-- 8BitDo original with PAL SNES colors: [https://gamepadviewer.com/?p=1&css=https://05jackgb.github.io/GPV-8bitdo-pro2_XboxLayout/8bitdopro2-snes.css](https://gamepadviewer.com/?p=1&css=https://05jackgb.github.io/GPV-8bitdo-pro2_XboxLayout/8bitdopro2-snes.css)
+- 8BitDo original layout with PAL SNES colors: [https://gamepadviewer.com/?p=1&css=https://05jackgb.github.io/GPV-8bitdo-pro2_XboxLayout/8bitdopro2-snes.css](https://gamepadviewer.com/?p=1&css=https://05jackgb.github.io/GPV-8bitdo-pro2_XboxLayout/8bitdopro2-snes.css)
 
 
 Alternatively, visit [GamePad Viewer](https://gamepadviewer.com/#generate) and generate your own customized URL; be sure to copy and paste one of the desired Custom CSS URL below. <br>
