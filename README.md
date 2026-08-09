@@ -1,4 +1,4 @@
-# GamePad Viewer skin: 8BitDo Pro 2 with Xbox ABXY
+# GamePad Viewer skin: 8BitDo Pro 2 + Xbox ABXY
 
 Simple layout to use.
 - Xbox ABXY layout
@@ -9,15 +9,19 @@ Simple layout to use.
 
 <img width="40%" src="controller-preview.gif">
 
-Browser Source URL to use: [https://gamepadviewer.com/?p=1&css=https://05jackgb.github.io/GPV-8bitdo-pro2_XboxLayout/8bitdopro2.css](https://gamepadviewer.com/?p=1&css=https://05jackgb.github.io/GPV-8bitdo-pro2_XboxLayout/8bitdopro2.css)
+### Browser Source URL to use
+- Xbox ABXY face-buttons: [https://gamepadviewer.com/?p=1&css=https://05jackgb.github.io/GPV-8bitdo-pro2_XboxLayout/8bitdopro2.css](https://gamepadviewer.com/?p=1&css=https://05jackgb.github.io/GPV-8bitdo-pro2_XboxLayout/8bitdopro2.css)
+- 8BitDo original with SNES colors: [https://gamepadviewer.com/?p=1&css=https://05jackgb.github.io/GPV-8bitdo-pro2_XboxLayout/8bitdopro2.css](https://gamepadviewer.com/?p=1&css=https://05jackgb.github.io/GPV-8bitdo-pro2_XboxLayout/8bitdopro2-snes.css)
 
-Alternatively, visit [GamePad Viewer](https://gamepadviewer.com/#generate) and generate your own customized URL; be sure to provide the necessary [Custom CSS URL](https://05jackgb.github.io/GPV-8bitdo-pro2_XboxLayout/8bitdopro2.css).
+Alternatively, visit [GamePad Viewer](https://gamepadviewer.com/#generate) and generate your own customized URL; be sure to provide the necessary Custom CSS URL.
+
+[Custom CSS URL with Xbox ABXY](https://05jackgb.github.io/GPV-8bitdo-pro2_XboxLayout/8bitdopro2.css)  -  [Custom CSS URL with original layout](https://05jackgb.github.io/GPV-8bitdo-pro2_XboxLayout/8bitdopro2-snes.css).
 
 
 ## Usage in OBS
 1. If you're on Linux, be sure to use OBS-studio-browser in order that "Browser" appears in sources.
 2. Add a "Browser" source.
-3. Copy and paste this URL: https://gamepadviewer.com/?p=1&css=https://05jackgb.github.io/GPV-8bitdo-pro2_XboxLayout/8bitdopro2.css
+3. Copy and paste one of the URLs above.
 4. Adjustments. Width: 725 and Height: 586
 5. Done.
 <br>
