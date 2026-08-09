@@ -222,25 +222,25 @@
 .custom .a {
     top: 258px;
     left: 533px;
-    background-image: url("button-a-pressed.svg");
+    background-image: url("button-b-pressed.svg");
 }
 
 .custom .b {
     top: 209px;
     left: 589px;
-    background-image: url("button-b-pressed.svg");
+    background-image: url("button-a-pressed.svg");
 }
 
 .custom .x {
     top: 209px;
     left: 477px;
-    background-image: url("button-x-pressed.svg");
+    background-image: url("button-y-pressed.svg");
 }
 
 .custom .y {
     top: 160px;
     left: 533px;
-    background-image: url("button-y-pressed.svg");
+    background-image: url("button-x-pressed.svg");
 }
 
 
